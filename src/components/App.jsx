@@ -21,7 +21,7 @@ const App = () => {
             <div className='w-[430px] xl:w-[390px] min-h-[630px]  mx-auto mt-20 border-2 border-cyan-600 bg-white rounded-xl'>
                 <div className="relative text-white ">
                     <Time />
-                    <img src="src/assets/img.svg" alt="img" />
+                    <img src="./assets/img.svg" alt="img" />
                 </div>
                 <div className="w-[370px] mx-auto">
                     <div className="flex justify-between items-center mt-6 mb-9">
@@ -38,12 +38,12 @@ const App = () => {
                                 onClick={() => (text == '') ? setModalError(!modalError) : dispatch(add({ text })) & setText('')}
                                 className='px-6 py-5 rounded-l-lg bg-green1 hover:opacity-80 active:bg-green2'
                             >
-                                <img className='w-4 h-4' src="src/assets/Vector.svg" alt="" />
+                                <img className='w-4 h-4' src="./assets/Vector.svg" alt="" />
                             </button>
                             <button
                                 onClick={() => setModal(!modal)}
                                 className=' px-2 py-5 rounded-r-lg bg-green1 hover:opacity-80 active:bg-green2'>
-                                <img className='w-3 h-3' src="src/assets/arrow.svg" alt="" />
+                                <img className='w-3 h-3' src="./assets/arrow.svg" alt="" />
                             </button>
                             {modal && <button
                                 onClick={() => dispatch(removeAll()) & setModal(false)}

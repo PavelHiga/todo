@@ -18,12 +18,12 @@ const Item = ({ value, index, remove, dispatch, complete }) => {
                 <img
                     onClick={() => dispatch(complete(index))}
                     className='h-7 w-7'
-                    src={value.comp ? '/src/assets/circle.svg' : '/src/assets/check.svg'} alt=""
+                    src={value.comp ? './assets/circle.svg' : './assets/check.svg'} alt=""
                 />
                 <img
                     onClick={() => dispatch(remove(index))}
                     className='w-7 h-7 cursor-pointer'
-                    src="/src/assets/trash.svg" alt=""
+                    src="./assets/trash.svg" alt=""
                 />
             </div>
         </div>
