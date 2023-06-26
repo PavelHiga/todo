@@ -19,9 +19,10 @@ const App = () => {
         <>
             {modalError && <Error setModalError={setModalError} />}
             <div className='w-[430px] xl:w-[390px] min-h-[630px]  mx-auto mt-20 border-2 border-cyan-600 bg-white rounded-xl'>
-                <div className="relative text-white ">
+                <div className="relative text-white bg-sky-800 rounded-t-lg" >
                     <Time />
-                    <img src="./assets/img.svg" alt="img" />
+                    <div className="w-full p-28 bg-no-repeat bg-cover rounded-t-xl"
+                    style={{ backgroundImage: "url(./assets/img.svg)" }}/>
                 </div>
                 <div className="w-[370px] mx-auto">
                     <div className="flex justify-between items-center mt-6 mb-9">
